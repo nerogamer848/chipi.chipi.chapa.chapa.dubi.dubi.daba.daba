@@ -1,0 +1,4 @@
+D:\bcarrasco\progra3\obj\Debug\net7.0\progra3.GeneratedMSBuildEditorConfig.editorconfig
+D:\bcarrasco\progra3\obj\Debug\net7.0\progra3.AssemblyInfoInputs.cache
+D:\bcarrasco\progra3\obj\Debug\net7.0\progra3.AssemblyInfo.cs
+D:\bcarrasco\progra3\obj\Debug\net7.0\progra3.csproj.CoreCompileInputs.cache
