@@ -1,12 +1,49 @@
-﻿namespace proyecto
+﻿using System;
+
+class Program
 {
-    class progra3{
-        public static void Main(string[] args)
+    static void Main(string[] args)
+    {
+        int[] vector = { 1, 2, 3, 4, 5 };
+
+        Console.WriteLine("Vector original:");
+        ImprimirVector(vector);
+
+        int[] vectorVolteado = VoltearVector(vector);
+
+        Console.WriteLine("Vector volteado:");
+        ImprimirVector(vectorVolteado);
+
+        int suma = SumarElementosVector(vectorVolteado);
+        Console.WriteLine("Suma de los elementos del vector volteado: " + suma);
+    }
+
+    static int[] VoltearVector(int[] vector)
+    {
+        int[] vectorVolteado = new int[vector.Length];
+        for (int i = 0; i < vector.Length; i++)
         {
-            int mEent = 12345;
-            int mDiv = 12345 % 10;
-         Console.Writeline(mEent);
-         Console.Writeline(mDiv);
+            vectorVolteado[i] = vector[vector.Length - 1 - i];
         }
+        return vectorVolteado;
+    }
+
+    static int SumarElementosVector(int[] vector)
+    {
+        int suma = 0;
+        foreach (int elemento in vector)
+        {
+            suma += elemento;
+        }
+        return suma;
+    }
+
+    static void ImprimirVector(int[] vector)
+    {
+        foreach (int elemento in vector)
+        {
+            Console.Write(elemento + " ");
+        }
+        Console.WriteLine();
     }
 }
